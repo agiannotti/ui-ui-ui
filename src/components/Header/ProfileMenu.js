@@ -6,7 +6,7 @@ import { classNames } from '../../utils/common';
 export default function ProfileMenu() {
   return (
     <Menu as="div" className="relative inline-block text-left">
-      <Menu.Button className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">
+      <Menu.Button className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent">
         <span className="sr-only">Open user menu</span>
         <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
       </Menu.Button>

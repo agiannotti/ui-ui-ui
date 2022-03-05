@@ -1,11 +1,15 @@
 import {
-  ArchiveIcon,
-  BanIcon,
-  FlagIcon,
-  InboxIcon,
-  PencilAltIcon,
-  UserCircleIcon,
+  AcademicCapIcon,
+  AnnotationIcon,
+  BellIcon,
+  CashIcon,
+  ChatIcon,
+  CogIcon,
+  PhoneIcon,
+  ReceiptRefundIcon,
+  UsersIcon,
 } from '@heroicons/react/outline';
+import { ChatBubble, MessageOutlined } from '@mui/icons-material';
 
 const user = {
   name: 'Whitney Francis',
@@ -34,12 +38,60 @@ const navigation = [
 ];
 
 const sidebarNavigation = [
-  { name: 'Open', href: '#!', icon: InboxIcon, current: true },
-  { name: 'Archive', href: '#!', icon: ArchiveIcon, current: false },
-  { name: 'Customers', href: '#!', icon: UserCircleIcon, current: false },
-  { name: 'Flagged', href: '#!', icon: FlagIcon, current: false },
-  { name: 'Spam', href: '#!', icon: BanIcon, current: false },
-  { name: 'Drafts', href: '#!', icon: PencilAltIcon, current: false },
+  { name: 'Open', href: '#!', icon: PhoneIcon, current: true },
+  { name: 'Archive', href: '#!', icon: UsersIcon, current: false },
+  {
+    name: 'Customers',
+    href: '#!',
+    icon: AnnotationIcon,
+    current: false,
+  },
+  { name: 'Flagged', href: '#!', icon: CogIcon, current: false },
 ];
 
-export { userNavigation, navigation, sidebarNavigation, user };
+const actions = [
+  {
+    title: 'Voice',
+    href: '#',
+    icon: PhoneIcon,
+    iconForeground: 'text-sky-700',
+    iconBackground: 'bg-sky-50',
+  },
+  {
+    title: 'SMS',
+    href: '#',
+    icon: ChatIcon,
+    iconForeground: 'text-indigo-700',
+    iconBackground: 'bg-indigo-50',
+  },
+  {
+    title: 'Chat',
+    href: '#',
+    icon: MessageOutlined,
+    iconForeground: 'text-sky-700',
+    iconBackground: 'bg-sky-50',
+  },
+  {
+    title: 'Notification',
+    href: '#',
+    icon: BellIcon,
+    iconForeground: 'text-amber-700',
+    iconBackground: 'bg-amber-50',
+  },
+  {
+    title: 'Immediate Outbound',
+    href: '#',
+    icon: ReceiptRefundIcon,
+    iconForeground: 'text-rose-700',
+    iconBackground: 'bg-rose-50',
+  },
+  {
+    title: 'Coaching Session',
+    href: '#',
+    icon: AcademicCapIcon,
+    iconForeground: 'text-emerald-700',
+    iconBackground: 'bg-emerald-50',
+  },
+];
+
+export { userNavigation, navigation, sidebarNavigation, user, actions };

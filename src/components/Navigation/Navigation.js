@@ -5,9 +5,9 @@ export default function Navigation() {
   return (
     <nav
       aria-label="Sidebar"
-      className="hidden md:block md:flex-shrink-0 md:bg-gray-800 md:overflow-y-auto"
+      className=" block flex-shrink-0 bg-gray-800 overflow-y-auto"
     >
-      <div className="relative w-20 h-screen flex flex-col p-3 space-y-3">
+      <div className="relative w-20 h-full flex flex-col p-3 space-y-3">
         {sidebarNavigation.map((item) => (
           <a
             key={item.name}
